@@ -12,13 +12,13 @@
 
     h1 {
       font-family: Helvetica, sans-serif;
-      padding-left: 1.75em;
+      padding-left: .9em;
       line-height: 0.5em;
     }
 
     h2 {
       font-family: Helvetica, sans-serif;
-      padding-left: 2.4em;
+      padding-left: 1.2em;
       line-height: 0.7em;
       padding-bottom: .25em;
       }
@@ -29,28 +29,91 @@
     }
 
     img {
-      max-width: 80%;
+      max-width: 100%;
+    }
+
+    summary {
+      font-family: Helvetica, sans-serif;
+      line-height: 1.2em;
     }
 
     .row-col {
       list-style: none;
-      overflow: hidden;
+      text-align: center;
+      padding-left: 0;
     }
+
+    .row-col li {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      width: 80%;
+      margin: 2%;
+      }
+
+    .album img {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .album img:hover {
+      box-shadow: 3px 5px 7px #aaa;
+    }
+
+    .album summary {
+      visibility: hidden;
+    }
+
+    .album .header {
+      display: block;
+      visibility: visible;
+    }
+
+    p {
+      max-width: 50em;
+      margin-right: .8em;
+      font-family: Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.2em;
+    }
+
+    dl {
+      display: inline;
+      font-family: Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.2em;
+    }
+
+    dl dt {
+      float: left;
+      margin-right: .3em;
+    }
+
 
   @media (min-width: 48em) {
 
     .row-col li {
-      float: left;
-      width: 50%
+      width: 45%
     }
+
+    p {
+      max-width: 42em;
+      margin-right: .2em;
+    }
+
   }
 
   @media (min-width: 80em) {
 
     .row-col li {
-      float: left;
-      width: 33%
+      width: 29%
     }
+
+    p {
+      max-width: 50em;
+
+    }
+
   }
 
 
@@ -70,11 +133,13 @@
 
   <ol class="row-col">
       <li class="col-1">
-        <details>
+        <details class="album">
           <summary>
+            <span class="header">
             <img alt="Badlands" src="img/badlands.jpg">
             <strong>Halsey</strong><br>
             <i>Badlands</i>
+            </span>
           </summary>
           <p>
             <i>Badlands</i> is my top album by far because not only is Halsey giving
@@ -86,23 +151,25 @@
             legal marijuana. The entire album is strong from start to finish.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Control</dd>
-            <dt>Release Date:</dt>
+            <dt><strong>Release Date:</strong></dt>
             <dd>August 28, 2015</dd>
-            <dt>Label:<dt>
+            <dt><strong>Label:</strong><dt>
             <dd>Astralwerks</dd>
-            <dt>Genres:<dt>
+            <dt><strong>Genres:</strong><dt>
             <dd>Indie Pop, Electropop</dd>
           </dl>
         </details>
       </li>
       <li class="col-2">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Anti" src="img/anti.jpg">
             <strong>Rihanna</strong><br>
             <i>Anti</i>
+            </span>
           </summary>
           <p>
             Probably one of, if not her best album to date, <i>Anti</i> is another
@@ -113,23 +180,25 @@
             a good range with all of the songs.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Same Ol’ Mistakes</dd>
-            <dt>Release Date:</dt>
+            <dt><strong>Release Date:</strong></dt>
             <dd>January 28th, 2016</dd>
-            <dt>Label:<dt>
+            <dt><strong>Label:</strong><dt>
             <dd>Westbury Road Entertainment</dd>
-            <dt>Genre:</dt>
+            <dt><strong>Genre:</strong></dt>
             <dd>Contemporary R&B</dd>
           </dl>
         </details>
       </li>
       <li class="col-3">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Caracal" src="img/caracal.jpg">
             <strong>Disclosure</strong><br>
             <i>Caracal</i>
+            </span>
           </summary>
           <p>
           Being an electronic duo, you will (not surprisingly) find a lot of
@@ -141,23 +210,25 @@
           your thing, you might want to pass on this one.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Superego feat. Nao</dd>
-            <dt>Release Date:</dt>
+            <dt><strong>Release Date:</strong></dt>
             <dd>September 25, 2015</dd>
-            <dt>Label:</dt>
+            <dt><strong>Label:</strong></dt>
             <dd>Capitol Records</dd>
-            <dt>Genres:</dt>
+            <dt><strong>Genres:</strong></dt>
             <dd>House, Contemporary R&B</dd>
           </dl>
         </details>
       </li>
       <li class="col-4">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Lemonade" src="img/lemonade.jpg">
             <strong>Beyoncé</strong><br>
             <i>Lemonade</i>
+            </span>
           </summary>
           <p>If you like music that has the common theme of "fuck you, I don't need you"
           to it and don't mind some spoken word mixed in, then this is your album. This
@@ -167,23 +238,25 @@
           masterpiece. So definitely check this out.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Formation</dd>
-            <dt>Release Date:</dt>
+            <dt><strong>Release Date:</strong></dt>
             <dd>April 23, 2016</dd>
-            <dt>Label:</dt>
+            <dt><strong>Label:</strong></dt>
             <dd>Parkwood Entertainment/Columbia Records</dd>
-            <dt>Genres:</dt>
+            <dt><strong>Genres:</strong></dt>
             <dd>Pop, Alternative R&B</dd>
           </dl>
         </details>
       </li>
       <li class="col-5">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Storyteller" src="img/storyteller.jpg">
             <strong>Carrie Underwood</strong><br>
             <i>Storyteller</i>
+            </span>
           </summary>
           <p>
           Though not necessarily a concept album, as the title suggests,
@@ -197,23 +270,25 @@
           you even if you're not that into Country music.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Smoke Break</dd>
-            <dt>Release Date:</dt>
+            <dt><strong>Release Date:</strong></dt>
             <dd>October 23, 2015</dd>
-            <dt>Label:</dt>
+            <dt><strong>Label:</strong></dt>
             <dd>Arista Nashville</dd>
-            <dt>Genre:</dt>
+            <dt><strong>Genre:</strong></dt>
             <dd>Country</dd>
           </dl>
         </details>
       </li>
       <li class="col-6">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Joanne" src="img/joanne.jpg">
             <strong>Lady Gaga</strong><br>
             <i>Joanne</i>
+            </span>
           </summary>
           <p>Similar to the style of ARTPOP, Lady Gaga's newest is something I could
           (and have) listened to on repeat for days. There's of course some fun dance
@@ -223,7 +298,7 @@
           sexuality, and embracing who you are.
           </p>
           <dl>
-            <dt>Favorite Song:</dt>
+            <dt><strong>Favorite Song:</strong></dt>
             <dd>Perfect Illusion</dd>
             <dt>Release Date:</dt>
             <dd>October 21, 2016</dd>
@@ -235,11 +310,13 @@
         </details>
       </li>
       <li class="col-7">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Yellowcard" src="img/yellowcard.jpg">
             <strong>Yellowcard</strong><br>
             <i>Yellowcard</i>
+            </span>
           </summary>
           <p>For me personally, this is a very bittersweet album. Being the last of the
           band's studio albums, the songs definitely are their way of saying farewell.
@@ -260,11 +337,13 @@
         </details>
       </li>
       <li class="col-8">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Smoke + Mirrors (Deluxe)" src="img/smoke+mirrors.jpg">
             <strong>Imagine Dragons</strong><br>
             <i>Smoke + Mirrors (Deluxe)</i>
+            </span>
           </summary>
           <p>This album is really just more of the funky rock/pop that made Imagine
           Dragons so popular a few years back. The songs are all awesome and have just
@@ -284,11 +363,13 @@
         </details>
       </li>
       <li class="col-9">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Delirium" src="img/delirium.jpg">
             <strong>Ellie Goulding</strong><br>
             <i>Delirium</i>
+            </span>
           </summary>
           <p>This is definitely one of those albums when no matter how much you try,
           you can't help but getting the songs stuck in your head. Every song is
@@ -309,11 +390,13 @@
         </details>
       </li>
       <li class="col-10">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="True Sadness" src="img/true-sadness.jpg">
             <strong>The Avett Brothers</strong><br>
             <i>True Sadness</i>
+            </span>
           </summary>
           <p>
           </p>
@@ -330,11 +413,13 @@
         </details>
       </li>
       <li class="col-11">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="The Phosphorescent Blues" src="img/the-phosphorescent-blues.jpg">
             <strong>Punch Brothers</strong><br>
             <i>The Phosphorescent Blues</i>
+            </span>
           </summary>
           <p>
           </p>
@@ -351,11 +436,13 @@
         </details>
       </li>
       <li class="col-12">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="iii" src="img/iii.jpg">
             <strong>Miike Snow</strong><br>
             <i>iii</i>
+            </span>
           </summary>
           <p>
           </p>
@@ -372,11 +459,13 @@
         </details>
       </li>
       <li class="col-13">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Ripcord" src="img/ripcord.jpg">
             <strong>Keith Urban</strong><br>
             <i>Ripcord</i>
+            </span>
           </summary>
           <p>
           </p>
@@ -393,11 +482,13 @@
         </details>
       </li>
       <li class="col-14">
-        <details>
+        <details class="album">
           <summary>
+          <span class="header">
             <img alt="Petals" src="img/petals.jpg">
             <strong>Elephant Revival</strong><br>
             <i>Petals</i>
+            </span>
           </summary>
           <p>
           </p>
